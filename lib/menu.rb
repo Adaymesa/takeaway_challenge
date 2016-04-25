@@ -1,16 +1,10 @@
 class Menu
 
-	attr_accessor :burgers
-
-   def initialize
-     @burgers = {
- 
-       "Beef" => 2,
-       "Chicken" => 1,
-       "Pork" => 3
- 
-     	}
-
+  attr_accessor :name, :price
+  		  
+	 def initialize(name, price=1)
+				@name = name
+    		@price = price
    end
  
    def burgers_count
